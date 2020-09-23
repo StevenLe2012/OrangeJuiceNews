@@ -3870,6 +3870,10 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			#main > .posts > article > p {
+				text-align: center;
+			}
+
 				#main > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
