@@ -4691,3 +4691,9 @@ input, select, textarea {
 		}
 
 	}
+	
+	.copy {
+            
+		cursor: copy;
+				  
+	  }
