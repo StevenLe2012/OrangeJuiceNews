@@ -4694,12 +4694,14 @@ input, select, textarea {
 
 	/* Steven New Stuff Below */
 
+	/**Copy links**/
 	.copy {
             
 		cursor: copy;
 				  
 	  }
 
+	/**I believe I used this to center images**/
 	.center {
 		display: block;
 		margin-left: auto;
@@ -4707,13 +4709,27 @@ input, select, textarea {
 		width: 50%;
 	}
 
+	/**At the end of each article, there is a link to main page**/
 	.linkToMainPage {
 		color: orangered;
 		float: right;
 	}
 
+	/**Author ex: "By Steven Le"**/
+	header > .author {
+		display: block;
+		font-size: 0.8rem;
+		height: 0;
+		margin: 0 0 1rem 0;
+		position: relative;
+	}
 
-	/* Everthing below fro slideshow gallery from w3schools */
+	/**Make the title of articles have less space between them and the author underneath**/
+	header > .title {
+		margin: 0 0 1rem 0;
+	}
+
+	/* Everthing below for slideshow gallery from w3schools */
 	* {
 		box-sizing: border-box;
 	  }
@@ -4806,4 +4822,29 @@ input, select, textarea {
 		opacity: 1;
 	  }
 
-	  
+	  /* Caption */
+	  .photo_caption {
+		  font-size: 14px
+	  }
+
+	  /* Tables for Authors Box */
+	  .author_box {
+		border: 1px solid black;
+	  }
+	  .author_box_name {
+		font-size: 25px;
+		border-left: 1px solid black;
+		border-right:  1px solid black;
+		border-top:1px solid black;
+		border-bottom:1px solid #E6E6E6;
+		background-color: #E6E6E6;
+		padding: 10px 0px 0px 15px
+	  }
+	  .author_box_date {
+		font-size: 20px; 
+		background-color: #E6E6E6
+	  }
+	  .author_box_bio {
+		font-size: 20px; 
+		border: 1px solid black
+	  }
