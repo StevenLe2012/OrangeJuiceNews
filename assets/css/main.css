@@ -4719,33 +4719,35 @@ input, select, textarea {
 	/** Turning White/Gray to Orange over Hover Icons/Images **/
 	/* Header */
 	.gray_to_orange_image_header {
+		animation: fadeIn 10s;
 		filter: grayscale(100%) brightness(1000%);
 		opacity: 1;
-		transition-delay: 20s ease-in-out;
 		width:55px;
 		display:flex;
+		transition: 0.05s;
 	}
 
 	.gray_to_orange_image_header:hover {
+		animation: fadeIn 10s;
 		filter: grayscale(0%);
 		opacity: 1;
-		transition-delay: 20s ease-in-out;
 		width:55px;
 		display:flex;
+		transition: 0.05s;
 	}
 	
 	/* Footer */
 	.gray_to_orange_image_footer {
 		filter: grayscale(100%) brightness(215%);
 		opacity: 1;
-		transition-delay: 20s ease-in-out;
+		transition: 0.3s;
 
 	}
 
 	.gray_to_orange_image_footer:hover {
 		filter: grayscale(0%);
 		opacity: 1;
-		transition-delay: 20s ease-in-out;
+		transition: 0.3s;
 	}
 
 
@@ -4901,3 +4903,14 @@ input, select, textarea {
 		font-size: 20px; 
 		border: 1px solid black
 	  }
+
+	  /** About Us Name **/
+	  .About_Us_Name_Main {
+		  text-align: center;
+		  font-size: 4rem;
+	  }
+	  .About_Us_Name {
+		text-align: left;
+		font-size: 1.75rem;
+	}
+
