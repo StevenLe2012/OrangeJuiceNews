@@ -4776,7 +4776,7 @@ input, select, textarea {
 		height: 0;
 		margin: 0 0 1rem 0;
 		position: relative;
-		padding-bottom: 7.5%;
+		padding-bottom: 10%;
 	}
 
 	/**Make the title of articles have less space between them and the author underneath**/
@@ -4905,7 +4905,7 @@ input, select, textarea {
 	  }
 
 	  /** About Us Name **/
-	  .About_Us_Name_Main {
+	  .Title_Name_Main {
 		  text-align: center;
 		  font-size: 4rem;
 	  }

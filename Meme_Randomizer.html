@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Cyber Orange - Editions</title>
+		<title>Cyber Orange - Meme Randomizer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,8 +26,8 @@
 			<nav id="nav">
 				<ul class="links">
 					<li><a href="index.html">Articles</a></li>
-					<li class="active"><a href="Editions.html">Editions</a></li>
-					<li><a href="Memes.html">Memes</a></li>
+					<li><a href="Editions.html">Editions</a></li>
+					<li class="active"><a href="Memes.html">Memes</a></li>
 					<li><a href="StudentProfile.html">Student Profiles</a></li>
 					<li><a href="AboutUs.html">About Us</a></li>
 				</ul>
@@ -39,49 +39,86 @@
 				</ul>
 			</nav>
 
-            <!-- Main -->
-                <div id="main">
-                    <!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">January 20, 2021</span>
-									<h2 class="title"><a href="index.html">NEWEST EDITION:<br>Edition 1</a></h2>
-								</header>
-								<a href="index.html" class="image main"><img src="images/Editions/Edition 1 Preview.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="index.html" class="button large">View The Latest Edition!</a></li>
-								</ul>
-							</article>
 
-                        <!-- Posts -->
-							<section class="posts">
+				<!-- Main -->
+					<div id="main">
+						<header>
+                            <h2 class="Title_Name_Main">Meme Randomizer</a></h2>
+                        </header>
 
-								<article>
-									<header>
-										<span class="date">January 20, 2021</span>
-                                        <h2 class="title"><a href="index.html">Edition 1</a></h2>
-                                        <span class="edition_titles">How to Survive Online Schooling, I'm the Girl, Hispanic Heritage Month, Killing Boredom, and How to Save Battery Life on Your Phone.</span>
-									</header>
-									<a href="index.html" class="image fit"><img src="images/Editions/Edition 1 Preview.jpg" alt="" /></a>
-                                    <ul class="actions special">
-										<li><a href="index.html" class="button">View This Edition</a></li>
-									</ul>
-                                </article>
-                                
-                                <article>
-									<header>
-										<span class="date">TBA</span>
-                                        <h2 class="title"><a href="#">Edition 2</a></h2>
-                                        <span class="edition_titles">Featured: N/A</span>
-									</header>
-									<a href="#" class="image fit"><img src="images/Editions/To_Be_Announced_Edition.jpg" alt="" /></a>
-                                    <ul class="actions special">
-										<li><a href="#" class="button">View This Edition</a></li>
-									</ul>
-								</article>
+						<!-- Meme Image Randomized -->
+						<div id="meme">
+							<img class = "center" src="images/Memes/Meme_Randomizer_Meme.png">
+						</div>
 
-                </div>
-                
+
+						<!-- Button -->
+						<ul class="actions special">
+							<li><button onclick="showMeme()">Randomize!</button></li>
+						</ul>       
+					</div>
+
+					<!-- JavaScript -->
+					<script>
+						removeMeme();
+						removeMeme();
+						function memeIndex() {
+							number_of_memes = 16 //Change this number when we have more memes and add in more else if statements below
+							return (Math.floor(Math.random() * (number_of_memes)) + 1); //The maximum is exclusive and the minimum is inclusive
+						}
+
+						function removeMeme() {
+							let div = document.getElementById("meme");
+							div.removeChild(div.childNodes[0]);
+						}
+
+						function showMeme() {
+							removeMeme();
+							let div = document.getElementById("meme");
+							let image = document.createElement("img");
+							meme_number = memeIndex();
+							if (meme_number == 1) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/802768030840782848/4upbjd.jpg";
+							} else if (meme_number == 2) {
+								image.src = "https://i.imgflip.com/4v2b4f.jpg"
+							} else if (meme_number == 3) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803119659121377280/4v1vtf.png";
+							} else if (meme_number == 4) {
+								image.src = "images/Memes/Beatles Sun.jpg"
+							} else if (meme_number == 5) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803117807905669120/4unp90.jpg";
+							} else if (meme_number == 6) {
+								image.src = "images/Memes/Shien Order.jpg"
+							} else if (meme_number == 7) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803127959069655080/4v31v2.png";
+							} else if (meme_number == 8) {
+								image.src = "https://cdn.ebaumsworld.com/2020/07/23/043954/86327172/funny-2020-memes-71.jpg";
+							} else if (meme_number == 9) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803118916623663104/4ubkrp.png";
+							} else if (meme_number == 10) {
+								image.src = "https://ichef.bbci.co.uk/images/ic/704xn/p072ms6r.jpg"
+							} else if (meme_number == 11) {
+								image.src = "https://media-assets-01.thedrum.com/cache/images/thedrum-prod/s3-screenshot_2020-02-17_at_1.12.11_pm--default--940.png";
+							} else if (meme_number == 12) {
+								image.src = "images/Memes/School-Memes-50.jpg"
+							} else if (meme_number == 13) {
+								image.src = "images/Memes/here-are-the-2020-back-to-school-memes-even-though-kids-shouldn-t-be-going-back-to-school-1.png";
+							} else if (meme_number == 14) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803118872588058634/4u9n0r.png";
+							} else if (meme_number == 15) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803128226159394856/4u91ig.png";
+							} else if (meme_number == 16) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803119529156542464/4um4gs.png";
+							} else {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803135873943994388/4tsika.png"
+							}
+							image.className += "center";
+							div.appendChild(image);
+						}
+					</script>
+
+
+
 					<!-- Footer -->
 					<footer id="footer">
 						<section>
