@@ -4895,6 +4895,18 @@ input, select, textarea {
 	  .photo_caption {
 		  font-size: 14px
 	  }
+	  /* Caption */
+	  .article_photo_column {
+		float: left;
+		width: 50%;
+		padding: 5px;
+	  }
+
+	  .article_photo_row::after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
 
 	  /* Tables for Authors Box */
 	  .author_box {
