@@ -4798,6 +4798,11 @@ input, select, textarea {
 		margin: 0 0 1rem 0;
 	}
 
+	/* Title of Article with Image for Cool Font */
+	.title_image {
+		width:100%;
+	}
+
 	/* Everthing below for slideshow gallery from w3schools */
 	* {
 		box-sizing: border-box;
